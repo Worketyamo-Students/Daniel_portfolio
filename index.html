@@ -9,13 +9,15 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 </head>
 <body><!--Tailwind-->
     
     <!-- Creation du Header -->
 
-    <header class="bg- [var(--color-background)]  w-full flex justify-between items-center flex-col p-[2rem] gap-35" id="home">
-            <div class=" w-full flex justify-between items-center flex-[1/3] mb-4 ">
+    <header class="bg- [var(--color-background)]  w-full flex justify-between items-center flex-col p-[2rem] gap-35 ">
+            <div class=" w-full flex justify-between items-center flex-[1/3] pb-30 fixed top-0 left-0 w-full  text-white shadow-md z-50">
                 <div class="text-[2rem] font-bold flex gap-3 items-center">
                     <ion-icon name="code-slash" class="text-[var(--color-text-secondary)] font-bold"></ion-icon>
                     <h1 class="text-[var(--color-text-secondary)]">Daniel is programmer</h1>
@@ -24,11 +26,11 @@
                         <div class="">
                             <div class="">
                                 <nav class="flex gap-15  font-bold text-20px">
-                                    <a href="#home" class="text-[var(--color-text-secondary)]" >Home</a>
-                                    <a href="#about" class="text-[var(--color-text-secondary)]">About</a>
-                                    <a href="#skills" class="text-[var(--color-text-secondary)]">Skills</a>
-                                    <a href="#portfolio" class="text-[var(--color-text-secondary)]">Portfolio</a>
-                                    <a href="#contact" class="text-[var(--color-text-secondary)]">Contact</a>
+                                    <a href="#home" class="nav-link" >Home</a>
+                                    <a href="#about" class="nav-link">About</a>
+                                    <a href="#skills" class="nav-link">Skills</a>
+                                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                                    <a href="#contact" class="nav-link">Contact</a>
                                 </nav>
                             </div>
                         </div>
@@ -38,8 +40,10 @@
                         </div>
                     </div>
             </div>
+    </header>
+    <section class="flex justify-center items-center  w-full gap-5 bg-var(--color-background) h-screen p-30" id="home">
 
-            <div class="flex justify-center items-center  w-full gap-5 ">
+            
                 <div class=" flex flex-col gap-3 ">
                         <h1 class="text-4xl font-bold text-white text-[50px]">👋 Salut, je suis <span class="text-yellow-400">Daniel is programmer</span></h1>
 
@@ -62,60 +66,114 @@
                 <div class="">
                     <img src="/Assets/Images/my_profil.jpg" alt="my_profil" class=" w-120 h-120 rounded-full mt-6 object-cover border-4 border-yellow-400">
                 </div>
-            </div>
-    </header>
+           
+    </section>
     <!-- Creation de la section About -->
 
     <section id="about" class="bg-slate-900 text-white py-16 h-screen flex flex-col items-center justify-center gap-20" >
                 
-     <div class="flex justify-center items-center gap-80 ">           
-         <div class="w-120 h-160 relative overflow-hidden">
-                  <img src="/Assets/Images/about_img.jpg" alt="Daniel" class="w-full h-full object-cover clip-irr">
-         </div>
-
-        <div>
-                <!-- Texte "À propos de moi" -->
-                <div class="max-w-3xl flex flex-col gap-5">
-                    <h2 class="text-3xl font-bold text-yellow-400 mb-4 text-[40px]">À propos de moi</h2>
-                    <p class="text-lg text-slate-200 mb-4 text-[20px]">
-                        Je suis <span class="font-semibold text-yellow-400">Daniel</span>, développeur front-end passionné par la création d'interfaces web intuitives et esthétiques. J'aime transformer des idées en expériences digitales engageantes, où <span class="font-semibold text-yellow-400">design moderne</span> rencontre <span class="font-semibold text-yellow-400">fonctionnalité optimale</span>.
-                    </p>
-                    <p class="text-lg text-slate-200 mb-6 text-[20px]">
-                        J'ai de l'expérience avec HTML, CSS, JavaScript, et des frameworks modernes comme React et Vue.js. Mon objectif est de concevoir des sites performants, accessibles et agréables à utiliser tout en explorant de nouvelles approches créatives.
-                    </p>
+            <div class="flex justify-center items-center gap-80 ">           
+                <div class="w-120 h-160 relative overflow-hidden">
+                        <img src="/Assets/Images/about_img.jpg" alt="Daniel" class="w-full h-full object-cover clip-irr">
                 </div>
-                
-        </div>
-    </div>
 
-    <div class="flex flex-wrap justify-center gap-40 pb-10">
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-html5"></ion-icon> HTML
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-css3"></ion-icon> CSS
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-javascript"></ion-icon> JavaScript
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-react"></ion-icon> React
-        </span><br>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-vue"></ion-icon> Vue.js
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="git-branch"></ion-icon> Git
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-github"></ion-icon> GitHub
-        </span>
-        <span class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-full font-semibold text-sm flex items-center gap-2">
-          <ion-icon name="logo-figma"></ion-icon> Figma
-        </span>
-        
-      </div>
+                <div>
+                        <!-- Texte "À propos de moi" -->
+                        <div class="max-w-3xl flex flex-col gap-5">
+                            <h2 class="text-3xl font-bold text-yellow-400 mb-4 text-[40px]">À propos de moi</h2>
+                            <p class="text-lg text-slate-200 mb-4 text-[20px]">
+                                Je suis <span class="font-semibold text-yellow-400">Daniel</span>, développeur front-end passionné par la création d'interfaces web intuitives et esthétiques. J'aime transformer des idées en expériences digitales engageantes, où <span class="font-semibold text-yellow-400">design moderne</span> rencontre <span class="font-semibold text-yellow-400">fonctionnalité optimale</span>.
+                            </p>
+                            <p class="text-lg text-slate-200 mb-6 text-[20px]">
+                                J'ai de l'expérience avec HTML, CSS, JavaScript, et des frameworks modernes comme React et Vue.js. Mon objectif est de concevoir des sites performants, accessibles et agréables à utiliser tout en explorant de nouvelles approches créatives.
+                            </p>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-40 pb-10">
+            
+                <a href="https://www.linkedin.com/in/daniel-is-programmer-4b4b7925b/" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/Danielisprogrammer" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.figma.com/file/3mXHk12YHk1mY4gkLZ5XG/Daniel-is-programmer?type=design&node-id=0-1&t=ZcXoX4Yk3b6v8m7H-0" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-figma"></ion-icon></a>
+                                    
+            </div>
 </section>
        
+    <!-- Creation de la section Skills -->
+<section id="skills" class="bg-var(--color-background) text-white py-20 h-auto flex flex-col items-center  gap-10">
+<br><br><br><br>
+    <h1 class="text-[var(--color-jaune)] text-[40px] font-bold">
+        Mes competences
+    </h1><br><br><br><br>
+    
+     <div class="flex flex-col justify-center items-center gap-20 text-5xl">
+           <div class="flex justify-center w-full gap-70">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-vuejs-plain colored"></i>
+           </div>
+           <div class="flex justify-around w-full">
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original colored"></i>
+            <i class="devicon-figma-plain colored"></i>
+            <i class="devicon-c-plain colored"></i>
+            <i class="devicon-cplusplus-plain colored"></i>
+           </div>
+    </div><br><br><br><br><br><br>
+
+<!--creation de la section portfolio -->
+
+<!--fin de la section portfolio-->
+
+<!--creation section contact -->
+
+    <section id="contact" class=" text-white py-24">
+  <div class="container mx-auto px-16 max-w-4xl flex flex-col items-center gap-16">
+
+    <!-- Titre -->
+     <div class="flex flex-col items-center text-center gap-20 mb-12">
+            <h2 class="text-5xl font-bold text-yellow-400 mb-6 text-[40px]">Contactez-moi</h2>
+            <p class="text-xl text-slate-200 mb-12">
+            Envoyez-moi un message pour collaborer, poser vos questions ou partager vos idées !
+            </p>
+    </div>
+    <div class="flex flex-col gap-16">
+
+      <!-- Formulaire -->
+      <form class="flex flex-col gap-6  p-10 rounded-3xl shadow-2xl w-2/3">
+        <input type="text" placeholder="Nom" class="p-4 rounded-lg bg-slate-700 text-white focus:outline-yellow-400 focus:ring-2 focus:ring-yellow-400">
+        <input type="email" placeholder="Email" class="p-4 rounded-lg bg-slate-700 text-white focus:outline-yellow-400 focus:ring-2 focus:ring-yellow-400">
+        <input type="text" placeholder="Sujet" class="p-4 rounded-lg bg-slate-700 text-white focus:outline-yellow-400 focus:ring-2 focus:ring-yellow-400">
+        <textarea placeholder="Message" rows="6" class="p-4 rounded-lg bg-slate-700 text-white focus:outline-yellow-400 focus:ring-2 focus:ring-yellow-400"></textarea>
+        <button type="submit" class="bg-yellow-400 text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-300 transition-all duration-300">
+          Envoyer
+        </button>
+      </form>
+
+      <!-- Icônes sociales -->
+         <div class="flex  justify-center gap-20 pb-10">
+            
+                <a href="https://www.linkedin.com/in/daniel-is-programmer-4b4b7925b/" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/Danielisprogrammer" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.figma.com/file/3mXHk12YHk1mY4gkLZ5XG/Daniel-is-programmer?type=design&node-id=0-1&t=ZcXoX4Yk3b6v8m7H-0" target="_blank" class="text-3xl text-slate-300 hover:text-yellow-400 transition-colors duration-300"><ion-icon name="logo-figma"></ion-icon></a>
+                                    
+            </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+</section>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+   padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family-primary);
 
@@ -27,10 +27,16 @@ html {
     font-size: var(--font-size-base);
      scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 80px; 
+}
+
 /*debut du header*/
 
 header {
     padding: 3rem 7rem;
+    background-color: var(--color-background);
+    height: auto;
 
 
 }
@@ -65,6 +71,18 @@ button:hover {
     transform: scale(1.1) rotate(5deg);
 
 }
+.active {
+  color: #FFD700; /* Jaune doré pour le lien actif */
+  font-weight: bold;
+}
+
+#home {
+    padding: 5rem;
+    height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
 /*fin du header*/
 
 /*section about*/
@@ -82,6 +100,17 @@ button:hover {
 }
 
 /*fin du about*/
+/*traitement de la section skills*/
 
-/*debut de la section skills*/
+#skills i{
+    font-size: 6rem;
+}
 
+/*fin de traitement section skills*/
+
+/*debut de traitement section portfolio*/
+
+/*fin de traitement section portfolio*/
+
+/*debut de traitement section contact*/
+    
